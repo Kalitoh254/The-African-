@@ -1,0 +1,138 @@
+/* General Reset and Body Styling */
+* {
+  margin: 0;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+header {
+  background-color: #d37;
+  color: white;
+  padding: 10px;
+  position: sticky;
+  text-align: center;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.logo-container {
+  position: absolute;
+  left: 7px;
+  top: 6px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.slogan {
+  font-weight: 300;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Slide-in Menu Styling */
+#slide-in-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  /* Initially hide the menu by positioning it off-screen */
+  height: 100%;
+  width: 250px;
+  background-color: #333;
+  color: #f4f4f4;
+  padding: 20px;
+  transition: right 0.3s ease;
+  /* Smooth transition effect */
+  z-index: 1000;
+}
+
+.menu-hidden {
+  right: -100%;
+  /* Hidden state */
+}
+
+.menu-visible {
+  right: 0;
+  /* Visible state */
+}
+
+#slider-arrow {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-size: 2em;
+  cursor: pointer;
+  color: #333;
+  z-index: 1100;
+  /* Ensure the arrow is always on top */
+}
+
+#slide-in-menu ul {
+  list-style-type: none;
+}
+
+#slide-in-menu ul li {
+  margin: 15px 0;
+}
+
+#slide-in-menu ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* News Article Styling */
+.news-article {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-article h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.news-article p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.news-article a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.news-article a:hover {
+  text-decoration: underline;
+}
